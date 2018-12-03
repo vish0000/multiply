@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row">
+    <form action="/home/multiplyPost" method="post">
+        inpute string <input type="text" name="inputData" />
+        separate <input type="text" name="separate" required />
+
+
+        <input type="submit" value="submit" />
+    </form>
+</div>
+
+<h3>@ViewData["Output"]</h3>
+
+<h2>@ViewData["errorMessage"]</h2>
